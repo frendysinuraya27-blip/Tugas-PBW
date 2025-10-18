@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae - Frendy Dewata Sinuraya</title>
+  <style>
+    /* === RESET DAN DASAR === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(135deg, #74ABE2 0%, #5563DE 100%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 10px;
+      color: #333;
+    }
+
+    /* === KONTENER UTAMA === */
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      padding: 40px 50px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* === EFEK GRADIENT GLOW === */
+    .container::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.15) 0%, transparent 70%);
+      animation: glow 8s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes glow {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      border-bottom: 3px solid #007bff;
+      padding-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #007bff;
+      box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+      color: #222;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 5px 0;
+      color: #444;
+      font-size: 15px;
+    }
+
+    section {
+      margin-top: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #007bff;
+      border-left: 5px solid #007bff;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .desc {
+      color: #333;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    /* === FOOTER === */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #555;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 700px) {
+      .container {
+        padding: 30px 25px;
+      }
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header img {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="pas photo.jpeg" alt="Foto Profil">
+      <div>
+        <h1>Frendy Dewata Sinuraya</h1>
+        <p>Email: frendy.sinuraya27@gmail.com</p>
+        <p>Telepon: 0819-0587-0879</p>
+        <p>Alamat: jl. Pondok Baru VI No.55 RT.008/RW.011, Pasar Rebo, Jakarta Timur, DKI Jakarta 13770</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>Tentang Saya</h2>
+      <p class="desc">
+        Mahasiswa Sistem Informasi dengan fokus pada integrasi teknologi dan manajemen bisnis. 
+        Memiliki kemampuan analitis yang kuat dalam memahami kebutuhan pengguna dan menerjemahkannya menjadi solusi berbasis sistem. 
+        Aktif dalam kegiatan akademik dan riset di bidang data mining serta sistem pendukung keputusan.
+      </p>
+    </section>
+
+    <section>
+      <h2>Pendidikan</h2>
+      <ul>
+        <li><b>Universitas Gunadarma</b> — S1 Sistem Informasi (2023 - Sekarang)</li>
+        <li><b>SMA Ignatius Slamet Riyadi</b> — Jurusan IPS (2020 - 2023)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pengalaman</h2>
+      <ul>
+        <li><b>Praktik Kerja Lapangan</b> — Menjadi Driver Shopee (2024)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Kemampuan</h2>
+      <ul>
+        <li>Bertanggung jawab</li>
+        <li>Disiplin</li>
+        <li>Kemampuan analisis dan pemecah masalah</li>
+        <li>Adaptif</li>
+        <li>Mampu bekerja dalam tim</li>
+        <li>Manajemen Waktu</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Kontak</h2>
+      <p class="desc">
+        Email: <a href="mailto:frendy.sinuraya27@gmail.com">frendy.sinuraya27@gmail.com</a><br>
+        LinkedIn: <a href="#">linkedin.com/in/FrendySinuraya</a><br>
+        Instagram: <a href="#">@frendydwt_</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2025 Frendy Dewata Sinuraya — Curriculum Vitae
+    </footer>
+  </div>
+</body>
+</html>
